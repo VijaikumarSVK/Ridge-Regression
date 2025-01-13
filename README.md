@@ -44,6 +44,7 @@ B = np.linalg.inv(X.T @ X + penalty) @ X.T @ y
 ```
 
 The calculated coefficients represent the weights assigned to each predictor variable.
+
 ![alt text](https://res.cloudinary.com/dqqjik4em/image/upload/v1736740780/manual_ridge.png)
 
 
@@ -58,6 +59,7 @@ The trained model is then used to predict the number of medals for the test set.
 The project compares the results of the manual implementation with the Scikit-learn Ridge Regression model. This demonstrates the consistency and validity of the manual implementation.
 
 Manual predictions - sklearn_predictions
+
 ![alt text](https://res.cloudinary.com/dqqjik4em/image/upload/v1736744369/manual_sklearn_comparison_ridge.png)
 
 #### Hyperparameter Tuning (Alpha)
@@ -78,6 +80,7 @@ for alpha in alphas:
 ```
 
 ![alt text](https://res.cloudinary.com/dqqjik4em/image/upload/v1736744602/ridge_errors.png)
+
 This analysis reveals the optimal alpha value that minimizes the prediction error.
 
 #### Conclusion
